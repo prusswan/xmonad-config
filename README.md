@@ -20,6 +20,10 @@ In order to use **XMonad** with **MATE** you need to execute following commmand:
 
     $ mateconftool-2 -s /desktop/mate/session/required_components/windowmanager xmonad --type string
 
+(For Mate 1.6, gsettings should be used):
+    
+    $ gsettings set org.mate.session.required-components windowmanager xmonad
+
 Instead of executing mentioned command, it's possible to create a startup shortcut with following command:
 
     $ /usr/bin/xmonad --replace
